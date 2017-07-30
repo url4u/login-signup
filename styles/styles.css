@@ -225,10 +225,8 @@ span.has-error, span.error, label.has-error, label.error { background: none repe
 .form-layout.animated .form-field > label { width: 98%; pointer-events: none; position: absolute; -webkit-transform-origin: left top; -o-transform-origin: left top; -moz-transform-origin: left top; -ms-transform-origin: left top; transform-origin: left top; left: 0.625em; top: 0.9375em; -webkit-transition: all 0.15s ease-out 0s; -moz-transition: all 0.15s ease-out 0s; transition: all 0.15s ease-out 0s; z-index: 2; }
 .form-layout.animated .form-field.focused > label { top: 0.3125em; -webkit-transform: scale(0.8); -o-transform: scale(0.8); -moz-transform: scale(0.8); -ms-transform: scale(0.8); transform: scale(0.8); }
 
-.wrapper { /* Old browsers */ background: #f0f9ff; /* FF3.6-15 */ background: -moz-linear-gradient(top, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* Chrome10-25,Safari5.1-6 */ background: -webkit-linear-gradient(top, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ background: linear-gradient(to bottom, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* IE6-9 */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); height: 100%; width: 100vw; }
-@media (max-width: 767px) { .wrapper { padding: 20px 0; } }
-.wrapper::after { /*Session error message end */ }
-.wrapper::after:after { clear: both; content: ""; display: block; }
+.wrapper { /* Old browsers */ background: #f0f9ff; /* FF3.6-15 */ background: -moz-linear-gradient(top, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* Chrome10-25,Safari5.1-6 */ background: -webkit-linear-gradient(top, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ background: linear-gradient(to bottom, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* IE6-9 */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); width: 100%; min-height: 100vh; }
+@media (max-width: 767px) { .wrapper { padding: 20px 0; height: 100%; } }
 
 /* wrapping info */
 .ls-wrap { background-color: rgba(68, 68, 68, 0.8); border-radius: 0.3125em; max-width: 1000px; }
